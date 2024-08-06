@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Iniciar Sesion</title>
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+
+            <div class="container_title">
+                
+                <img src="images/Logo_png.png" class="container_title_image">
+                <h1 class="container_title_h1">Acceso al Sistema</h1>
+                <p class="container_title_p">Introduzca Usuario y Contraseña para continuar</p>
+
+            </div>
+
+            <div class="container_login">
+                <form class="container_form">
+
+                    <div class="login__field">
+                        <i class="login__icon fas fa-user"></i>
+                        <input type="text" class="login__input" id="inputUser" placeholder="Usuario">
+                    </div>
+    
+                    <div class="login__field">
+                        <i class="login__icon fas fa-lock"></i>
+                        <input type="password" class="login__input" id="inputPassword" placeholder="Password">
+                    </div>
+                    
+                    <div class="login__check">
+                        <p><input type="checkbox" > Recordar Contraseña</p>
+                        <p><a href="crate_user.html">Crear Cuenta</a></p>
+                    </div>
+                    
+                    <div>
+                        <button type="button" class="container_form_login" id="buttonLogin">Iniciar Sesion</button>
+                    </div>
+                    
+                </form>
+            </div>
+            
+        </div>
+    </section>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
