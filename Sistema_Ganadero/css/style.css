@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+}
+
+:root{
+	--color-prymary : #4880FF;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    display: grid; 
+ 
+    grid-template-rows: 12% 1fr 1fr;
+    grid-template-columns: 20% 1fr 1fr;
+    grid-auto-rows: minmax(125px, auto);
+    gap: 0px;
+    width: 100%;
+    height: 100%;
+    grid-template-areas: 
+    "logo           search  navright"  
+    "main_menu      content content" 
+    "process_menu   content content";
+ }
+   
+ .logo{
+ 
+    display: flex;
+    grid-area: logo;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -1.5rem;
+    
+ }
+
+ .logo_img{
+    max-width: 90%;
+    height: 80%;
+    place-content: center;
+    margin-top: 1.5rem;
+ }
+
+ .search{  
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    grid-area: search;
+    gap: 2rem;
+    margin-left: 2rem;
+    
+
+ }
+
+ .search_container{
+    width: 20rem;
+    border: 1.5px solid grey;
+    padding: .5rem;
+    display: flex;
+    border-radius: 2rem;
+    background-color: lightgrey;
+    gap: .5rem;
+    align-items: center;
+}
+
+.search_container i{
+    color: gray;
+}
+
+.search_container_input{
+    background-color: lightgrey;
+    border: none;
+    padding: .2rem;
+    outline: none;
+    width: 100%;
+}
+
+.navright{
+    grid-area: navright;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navright img{
+    width: 2rem;
+}
+
+.navright_language{
+    width: 50%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    
+}
+
+.navright_users{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navright_users i{
+    font-size: 2rem;
+}
+
+.navright_users p{
+    font-size: .8rem;
+}
+
+.navright_logout{
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.navright_logout i{
+   font-size: 1.5rem;
+}
+
+.navright_logout p{
+   font-size: 0.8rem;
+   margin-top: .5rem;
+}
+
+.navright_logout a{
+   text-decoration: none;
+    color: black;
+ }
+
+ .link-logout{
+   width: 7rem;
+   padding: .2rem;
+   border-radius: 1rem;
+   background-color: var(--color-prymary);
+   color: white;
+   margin-top: .5rem;
+   border: none;
+   cursor: pointer;
+}
+
+.main_menu{
+   grid-area: main_menu;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: .5rem;
+ }
+
+ .link{
+   height: 2.2rem;
+   width: 12rem;
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   border-radius: .7rem;
+   padding: 1rem;
+   text-decoration: none;
+   color: black;
+ }
+
+ .link:hover{
+    background-color: #4880FF;
+    color: white;
+ }
+
+ .process_menu{
+    grid-area: process_menu;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .5rem;
+ }
+
+
+ .content{
+    background-color: lightgrey; 
+    grid-area: content;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+ }
+
+ .content_title{
+    text-align: start;
+    padding: 1rem;
+    width: 50%;
+ }
+
+ .content_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+ }
+
+ .content_main{
+    background-color: whitesmoke;
+    width: 90%;
+    height: 100%;
+ }
+
+ .content_main_title{
+   margin: .5rem 0 0 1rem;
+ }
+
+ .content_container_delete{
+   width: 17rem;
+   padding: .5rem;
+   border-radius: 1rem;
+   background-color: #4880FF;
+   color: white;
+   margin:2rem 0 0 1rem;
+   border: none;
+   cursor: pointer;
+   font-size: 1.2rem;
+ }
